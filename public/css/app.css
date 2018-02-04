@@ -1,0 +1,113 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    color:#564f4f;
+    font-family: sans-serif;
+    font-size: 14px;
+}
+a{
+    text-decoration: none;
+    color:#564f4f;
+}
+a:hover{
+    text-decoration: none
+}
+/* Header */
+.navbar-inverse .navbar-brand{
+    color: #fff;
+    font-family: fantasy;
+    font-size: 4rem;
+}
+.navbar-inverse{
+    background-color: #11749a;
+    padding: 2%;
+    border-radius: 0;
+}
+.container-fluid{
+    padding-right:0px;
+    padding-left:0px; 
+}
+.navbar-right li{
+    padding: 15px;
+    cursor: pointer;
+}
+.navbar-right li span{
+    color:#ffffff;
+}
+form.navbar-form {
+    width: 60%;
+}
+form.navbar-form  .form-group{
+    width: 50%;
+    margin: auto;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+form.navbar-form  .form-group input{
+    width: 100%;
+}
+
+/* Template */
+.mainTemplate{
+    margin-top: 12%;
+}
+span.heading {
+    font-weight: bold;
+    color: #15739a;
+    font-size: 1.8rem;
+    font-family: cursive;
+}
+.edit, .delete{
+    float:right;
+    font-size:15px !important;
+    margin: 0px 10px;
+    color: #11749a;
+    -webkit-transition: all 0.16s;
+    -moz-transition: all 0.16s;
+    transition: all 0.16s;
+    cursor: pointer;
+}
+
+h3 .edit:hover span.edit{
+    color: green;
+    font-size:20px !important;
+    transform: translate(5px, -10px);
+}
+h3 a:hover span.delete{
+    color: red;
+    font-size:20px !important;
+    transform: translate(0px, -10px);
+}
+.list-group-item, form{
+    margin: 2%;
+}
+form.dataForm{
+    background: #11749a;
+    width: 50%;
+    padding: 5%;
+    margin-left: 50%;
+    margin-top: 20%;
+    position: fixed;
+    z-index: 99999;
+    color: #ffffff;
+    transform: translate(-50%, -20%);
+    transition: all 0.16s;
+}
+form.dataForm .btn-primary {
+    color: #15739a;
+    background-color: #fcfeff;
+    border-color: #15739a;
+}
+.list-group-item{
+    min-height: 100px;
+    overflow: hidden;
+}
+
+.glyphicon-plus-sign:after {
+    content: "\e081";
+}
+.glyphicon-plus-sign:before {
+    content: "";
+}

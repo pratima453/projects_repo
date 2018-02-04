@@ -1,0 +1,20 @@
+    <form ng-show="toggleShowAdd" class="dataForm">
+            <div class="form-group">
+              <label for="ProjectName">ProjectName</label>
+              <input type="text" class="form-control" id="ProjectName" placeholder="ProjectName" ng-model="project.projectName">
+            </div>
+            <div class="form-group">
+              <label for="Contributor">Contributor</label>
+              <input type="text" class="form-control" id="Contributor" placeholder="Contributor" ng-model="project.contributor">
+            </div>
+            <div class="form-group">
+                    <label for="Contributor">Technologies</label>
+                    <input type="text" class="form-control" id="Technologies" placeholder="Technologies" ng-model="project.technologies">
+            </div>
+            <div class="form-group">
+                    <label for="Description">Description</label>
+                    <textarea class="form-control" id="Description" placeholder="Description" ng-model="project.description" rows="3"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" ng-click = "addProject(project)">Add New Project</button>
+            <button type="submit" class="btn btn-primary" ng-click = "cancel()">Discard</button>
+     </form>

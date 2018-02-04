@@ -1,0 +1,17 @@
+<div ng-init="loadProjects()"></div>
+<div class="mainTemplate" ng-show="showTemplate">
+        <div ng-repeat = 'project in projects | filter:searchData' class="list-group-item list-group-item-action">
+                <p> <span class="heading">Project : </span>
+                    <span>{{project.projectName | uppercase}} </span>
+                    <a href="#">
+                            <span class="glyphicon glyphicon-trash delete" ng-click = "deleteProject(project)"></span>
+                    </a>
+                    <inpt type="button" value="Edit" class="edit" ng-click = "editProject(project)">
+                        <span class="glyphicon glyphicon-edit edit"></span>
+                    </inpt>
+                </p>
+                <p><span class="heading">Contributor :</span> {{project.contributor | uppercase}}</p>
+                <p><a href="#" ng-click = "loadTechnologies()"><span class="heading">Technologies : </span>{{project.technologies | uppercase}}</a></p>
+                <p><span class="heading">Description : </span>{{project.description}}</p>
+        </div>
+</div>

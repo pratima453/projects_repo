@@ -1,0 +1,19 @@
+{
+  "name": "projectrepo",
+  "description": "",
+  "main": "server.js",
+  "authors": [
+    "pavan"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "private": true,
+  "dependencies": {
+    "angular": "^1.6.7",
+    "bootstrap": "^3.3.7",
+    "jquery": "^3.2.1",
+    "angular-resource": "^1.6.7",
+    "angular-route": "^1.6.7",
+    "angular-animate": "^1.6.7"
+  }
+}
